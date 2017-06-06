@@ -1,0 +1,33 @@
+<%= form_for(@fan) do |f| %>
+  <fieldset>
+    <ol>
+      <li class="required">
+        <%= f.label :name %>
+        <%= f.text_field :name, size: 40, autofocus: true %>
+      </li>
+      <li class="required">
+        <%= f.label :email %>
+        <%= f.email_field :email, size: 40 %>
+      </li>
+      <li class="required">
+        <%= f.label :city %>
+        <%= f.text_field :city, size: 20 %>
+      </li>
+      <li class="required">
+        <%= f.label :state %>
+        <%= f.text_field :state, size: 2 %>
+      </li>
+      <li class="required">
+        <%= f.label :country %>
+        <%= f.text_field :country, size: 10 %>
+      </li>
+      <li class="required">
+        <%= f.label :message %>
+        <%= f.text_field :message, size: 120 %>
+      </li>
+    </ol>
+    <p>
+      <%= f.submit %>
+    </p>
+  </fieldset>
+<% end %>
