@@ -1,0 +1,198 @@
+$primary-background-color: #f0e68c;
+$secondary-background-color: slategrey;
+$subdued-color: darken($primary-background-color, 20%);
+$flash-notice-color: #337a15;
+$flash-alert-color:  #FFE1DE;
+$errors-background-color: #FFC;
+$errors-text-color: #DC3D3D;
+$accent-color: #FAFBFF;
+$primary-text-color: #444;
+$secondary-text-color: #777;
+$primary-link-color: #507bd6;
+$secondary-link-color: slategrey;
+
+@media (max-width: 400px) {
+  .flex-wrap {
+    display: block;
+  }
+}
+body {
+  background-color: $primary-background-color;
+  font-family: "Oswald", sans-serif;
+  color: $primary-text-color;
+  h1 {
+    margin-left: 100px;
+    width: 600px;
+  }
+  .left h3 {
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 350px;
+    font-size: 24px;
+  }
+  .right h3 {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 350px;
+    font-size: 24px;
+  }
+  .flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .col {
+    flex: 1;
+    width: 45%;
+    flex-wrap: wrap;
+  }
+  #google_map_image {
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+    vertical-align: top;
+    padding-bottom: 20px;
+  }
+  .flash_notice {
+    margin-left: 100px;
+    padding-bottom: 10px;
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  input#fan_email {
+    width: 300px;
+    padding: 10px;
+  }
+  input#fan_name {
+    width: 300px;
+    padding: 10px;
+  }
+  input#fan_city {
+    padding: 10px;
+  }
+  select#fan_state {
+    height: 25px;
+    font-size: 14px;
+  }
+  input#fan_country {
+    padding: 5px;
+  }
+  input#fan_message {
+    height: auto;
+    display: inline-block;
+    overflow: auto;
+    vertical-align: top;
+    flex-direction: column;
+    resize: auto;
+    cursor: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  #fan_message {
+    width: 300px;
+    padding-top: 10px;
+  }
+  .messages {
+    border: 2px solid slategrey;
+    width: 350px;
+    height: 600px;
+    resize: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+    vertical-align: top;
+    overflow-x: scroll;
+    word-wrap: break-word;
+    li {
+      width: 300px;
+      padding: 15px;
+      border-bottom-style: inset;
+      border-bottom-color: slategrey;
+      list-style-type: none;
+    }
+  }//end body
+  .errors {
+    padding-bottom: 20px;
+    margin-left: 200px;
+    color: $errors-text-color;
+    .button {
+      color: $primary-link-color;
+    }
+  }
+  fieldset {
+    margin: 0 0 0px 100px;
+    width: 350px;
+    height: 600px;
+    padding: 10px 20px;
+    border: 2px solid slategrey;
+    label {
+      font-size: 20px;
+      display: block;
+      width: 300px;
+      margin-bottom: .25em;
+    }
+    ol {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 300px;
+
+      li {
+        margin: 0 0 20px 0;
+        padding: 0;
+        width: 300px;
+
+        &.required label {
+          font-weight: bold;
+        }
+      }
+    }
+    input,
+    label {
+      display: block;
+    }
+    input,
+    textarea {
+      font-size:     16px;
+      padding:       5px;
+      border-radius: 6px;
+      box-shadow:    0px;
+      // border: 1px solid $subdued-color;
+      width: auto;
+    }
+    div.field_with_errors {
+      display: inline;
+      label {
+        color: $errors-text-color;
+      }
+      input, textarea, select {
+        background: $errors-background-color;
+      }
+    }
+    p {
+      input {
+        display: inline-block;
+      }
+      a.button {
+        padding: 10px 15px;
+      }
+    }
+  }
+  input[type="submit"] {
+    margin-left: 200px;
+    border-radius:5px 5px 5px 5px;
+  	-moz-border-radius:5px 5px 5px 5px;
+  	-webkit-border-radius:5px 5px 5px 5px;
+  	box-shadow:0px 0px 0px rgb(0, 0, 0);
+  	-moz-box-shadow:0px 0px 0px rgb(0, 0, 0);
+  	-webkit-box-shadow:0px 0px 0px rgb(0, 0, 0);
+  	background-color: rgb(255, 255, 255);
+  	background-image:linear-gradient(-90deg, rgb(238, 238, 238), rgb(204, 204, 204));
+  	background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, from(rgb(238, 238, 238)), to(rgb(204, 204, 204)));
+  	background-image:-moz-linear-gradient(-90deg, rgb(238, 238, 238), rgb(204, 204, 204));
+  }
+}

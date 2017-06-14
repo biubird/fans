@@ -7,7 +7,7 @@ describe "Creating a new fan" do
     fill_in "Name", with: "Super Fan"
     fill_in "Email", with: "fan@super.com"
     fill_in "City", with: "Portland"
-    fill_in "State", with: "OR"
+    select "OR", from: "State"
     fill_in "Country", with: "USA"
     fill_in "Message", with: "I just love this band!"
 
