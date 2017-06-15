@@ -1,5 +1,5 @@
 <% @fans.each do |fan| %>
   <li>
-    <strong><%= fan.name %></strong> from <%= fan.city %>, <%= fan.state %> says &quot;<%= fan.message %>&quot;
+    <strong><%= fan.name %></strong> from <strong><%= fan.city %>, <%= fan.state %><%= fan.country %></strong> says <i>&quot;<%= fan.message %>&quot;</i>
   </li>
 <% end %>
