@@ -1,16 +1,8 @@
 <h1>Where Are the Fans of BeauSoleil??</h1>
 
 <div id="google_map_image">
-  <%= image_tag("world-map.png") %>
-</div>
-
-<div class="flex-grid">
-  <div class="left col">
-    <h3>Join here!</h3>
-  </div>
-  <div class="right col">
-    <h3>What Fans Are Saying:</h3>
-  </div>
+  <img class="left_map" src="https://maps.googleapis.com/maps/api/staticmap?center=Mexico&zoom=2&size=800x600&markers=color:red%7CKansas%7CMaine%7CNovaScotia%7CPortland+Oregon&key=AIzaSyDe0aNlX2J1DMx808OQI_RsfhI5ViYiIkw" />
+  <img class="right_map" src="https://maps.googleapis.com/maps/api/staticmap?center=India&zoom=2&size=800x600&markers=color:red%7CFrance&key=AIzaSyDe0aNlX2J1DMx808OQI_RsfhI5ViYiIkw" />
 </div>
 
 <div class="flash_notice">
@@ -18,16 +10,19 @@
   <%= flash[:errors] %>
 </div>
 
-<div class="flex-wrap">
-  <div class="flex-grid">
-
-    <div class="fan_form col">
+<div class="row">
+  <div class="left fan_form col">
+    <h3>Join our fanbase here!</h3>
       <%= render "form" %>
-    </div>
-    <div class="fan_messages col">
-      <div class="messages">
+  </div>
+  <div class="right col">
+    <h3>What Fans Are Saying:</h3>
+      <div class="fan_messages">
         <%= render 'message' %>
       </div>
-    </div>
   </div>
+</div>
+
+<div class="footer">
+    <h3>Your email will NOT be shared - you will receive a confirmation email once added to our mailing list! Merci!</h3>
 </div>
