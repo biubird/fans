@@ -3,7 +3,7 @@ class CreateMarkerUrl
 
 	def initialize markers
 		@markers = markers
-		@google_map_api = "&key=AIzaSyDe0aNlX2J1DMx808OQI_RsfhI5ViYiIkw"
+		@google_map_api = ENV['google_api_key']
 	end
 
 	def left_post_initialize
