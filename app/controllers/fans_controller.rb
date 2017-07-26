@@ -1,7 +1,14 @@
+require 'fans_helper'
+
 class FansController < ApplicationController
+  attr_reader :fans, :markers
+
   def index
     @fans = Fan.all.order(:created_at).reverse_order
+    @markers = CreateMarker.new(@fans).process
     @fan = Fan.new
+    @left_marker_url = CreateMarkerUrl.new(@markers).left_post_initialize
+    @right_marker_url = CreateMarkerUrl.new(@markers).right_post_initialize
   end
 
   def new
@@ -23,3 +30,9 @@ class FansController < ApplicationController
     fan_params = params.require(:fan).permit(:name, :email, :city, :state, :country, :message)
   end
 end
+
+
+
+
+
+

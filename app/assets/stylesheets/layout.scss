@@ -48,16 +48,21 @@ body {
     }
   }
   #google_map_image {
-    margin-left: 40px;
     vertical-align: top;
-    padding-bottom: 20px;
+    padding-top: 10px;
     display: inline;
     img {
       margin: 0 auto;
       border: 2px solid slategrey;
+      margin-bottom: 10px;
     }
-    img.right_map {
+    #right_map {
       margin-left: 40px;
+      display: inline;
+    }
+    #left_map {
+      margin-left: 40px;
+      display: inline;
     }
   }
   .flash_notice {
@@ -125,6 +130,7 @@ body {
   }//end body
   .footer {
     display: flex;
+    margin-left: 100px;
     h3 {
       text-align: center;
       margin-left: 40px;

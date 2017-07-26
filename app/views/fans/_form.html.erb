@@ -22,8 +22,8 @@
         <%= f.select :state, Fan::STATES, prompt: "pick one" %>
       </li>
       <li class="required">
-        <%= f.label :country %>
-        <%= f.text_field :country, size: 10, placeholder: "(optional)" %>
+        <%= f.label :state %>
+        <%= f.select :country, Fan::COUNTRIES, prompt: "pick one" %>
       </li>
       <li class="required">
         <%= f.label :message %>
