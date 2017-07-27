@@ -2,7 +2,7 @@ class Fan < ApplicationRecord
 
   validates :name, :city, presence: true
 
-  STATES = %w(AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY --)
+  STATES = %w(-- AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY)
   validates :state, inclusion: { in: STATES }
   COUNTRIES = %w(USA Afghanistan Albania Algeria Andorra Angola Antiqua/Barbuda Argentina Armenia Aruba Australia Azerbaijan Bahamas Bahrain Bangladesh Barbados Belarus 
                  Belgium Belize Benin Bhutan Bolivia Bosnia/Herzegovina Botswana Brazil Brunei Bulgaria BurkinaFaso Burma Burundi Cambodia Cameroon Canada CaboVerde Central/African/Republic 
