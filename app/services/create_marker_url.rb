@@ -22,6 +22,8 @@ class CreateMarkerUrl
 		"https://maps.googleapis.com/maps/api/staticmap?center=India&zoom=2&size=800x600&markers=color:red#{format_markers}#{@google_map_api}"
 	end
 
+	private
+
 	def format_markers
     marker_array = markers.join(',').gsub(/,/, ',' => '')
     marker_array.gsub(/\s+/, '')
